@@ -1,0 +1,23 @@
+My Project Structure
+├── Public
+│   ├── index.html
+├── src
+|   ├── assest/                                       # For images, icons, and static files
+|   |   ├── Iamge                               
+|   ├── components/                                    # Reusable components
+|   |   ├── Footer                                    # Footer with links and info
+|   |   ├── Header                                    # Header with Logo, search 0Fnctionality etc
+|   |   ├── Navigation                                # Navigation In All Page Link.
+|   |   ├── SelectDropDwon                            # Custome DropDwon.
+|   |   |   ├── Category
+|   |   |   ├── Users
+|   ├── CustomHooks                                   # CustomHooks For Use API Call
+|   ├── Others
+|   ├── Pages                                         # Pages for routing
+|   ├── App.css
+|   ├── App.js
+|   ├── index.js
+|   ├── Root.jsx
+|   ├── .gitignore
+├── package.json
+
