@@ -1,0 +1,61 @@
+.selectCate{
+    padding: 0px 5px 0px 20px;
+}
+.selectCate::after{
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: -2px;
+    right: 0px;
+}
+.cateName{
+    width: 130px;
+}
+.DropDownicon{
+    margin-left: 10px;
+    font-size: 30px;
+}
+.active{
+    background-color: rgb(216, 212, 212);
+}
+
+.CateDrop{
+    position: absolute;
+    list-style: none;
+    padding: 10px;
+    left: 0px;
+    top: 190%;
+    background-color:white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    /* overflow-y: scroll; */
+}
+.selectCate .CateDrop input{
+    padding: 9px;
+    margin: 0px 10px;
+    border: 1px solid #3bb77e;
+    border-radius: 10px;
+    outline: none;
+}
+.cateList{
+    width: 200px;
+    height: 300px;
+    overflow-y: scroll;
+    list-style: none;
+    text-align: start;
+    padding: 10px 0px;
+    padding-left: 10px;
+}
+.cateList li{
+    padding: 5px 10px;
+}
+
+.cateList::-webkit-scrollbar{
+    width: 10px;
+}
+
+.cateList::-webkit-scrollbar-thumb{
+    background-color: #3bb77e;
+    border-radius: 10px;
+}
