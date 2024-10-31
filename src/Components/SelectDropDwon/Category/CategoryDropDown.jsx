@@ -29,7 +29,7 @@ const CategoryDropDown = (props) => {
     <div>
       <div className="selectCate position-relative">
         <div className="cateName cursor" onClick={haendelCate}>
-          {selectItem.length > 14 ? selectItem.substring(0,10) + '...':selectItem}<RiArrowDropDownLine className="DropDownicon"/>
+          {selectItem.length >= 15 ? selectItem.substring(0,13) +'..':selectItem}<RiArrowDropDownLine className="DropDownicon"/>
         </div>
         {isOpenAccount == true && (
           <div className="CateDrop">

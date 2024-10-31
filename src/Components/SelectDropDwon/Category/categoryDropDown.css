@@ -12,10 +12,12 @@
 }
 .cateName{
     width: 130px;
+    font-size: 15px;
 }
 .DropDownicon{
-    margin-left: 10px;
+    margin-left: 5px;
     font-size: 30px;
+    /* position: fixed; */
 }
 .active{
     background-color: rgb(216, 212, 212);
@@ -34,7 +36,7 @@
 .selectCate .CateDrop input{
     padding: 9px;
     margin: 0px 10px;
-    border: 1px solid #3bb77e;
+    /* border: 1px solid #3bb77e; */
     border-radius: 10px;
     outline: none;
 }

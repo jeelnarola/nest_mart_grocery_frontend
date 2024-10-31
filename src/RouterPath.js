@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Header from "./Components/Header/Header";
 import Root from "./Root";
+import Home from "./Page/Home/Home";
+import Notfoundpage from "./Page/404/Notfoundpage";
 
 export const router=createBrowserRouter([
     {
@@ -9,12 +10,12 @@ export const router=createBrowserRouter([
         children:[
           {
             path:"",
-            element:<Header/>
+            element:<Home/>
           },
-        //   {
-        //     path:"*",
-        //     element:<ProductFetch/>
-        //   }
+          {
+            path:"*",
+            element:<Notfoundpage/>
+          }
         ]
       }
 ])
