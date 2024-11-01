@@ -12,6 +12,7 @@ import { FaGift } from "react-icons/fa";
 import { BiHeart } from "react-icons/bi";
 import { IoIosSettings,IoIosLogOut } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
+import Navigation from "../Navigation/Navigation";
 const Header = () => {
   const [catgories, setcatgories] = useState([
     "All Catgories",
@@ -32,6 +33,7 @@ const Header = () => {
   ]);
 
   const [isOpenAccount, setisOpenAccount] = useState(false);
+  const [isnavOpen, setisnavOpen] = useState(false);
   //   const haendelCate=()=>{
   //    setisOpenAccount(!isOpenAccount)
   //    console.log(isOpenAccount)
@@ -39,13 +41,16 @@ const Header = () => {
   const headelUser = () =>{
     setisOpenAccount(!isOpenAccount)
   }
+  const headelNavOpen = e =>{
+    setisnavOpen(true)
+  }
   return (
     <div>
       <header>
         <div className="Custcontainer">
-          <div className="row1  justify-content-cut">
+          <div className="row1 align-items justify-content-cut">
           <div className="col-sm-3 menubox">
-            <IoMenu className="menu"/>
+            <IoMenu className="menu" onClick={headelNavOpen}/>
           </div>
             <div className="col-sm-3">
               <div className="logo">
@@ -64,9 +69,9 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-3">
-              <ul className="list list-inline mb-0 headerTabs">
-                <li className="list-inline-item Compare">
+            <div className="col-sm-2">
+              <ul className="headerTabs">
+                <li className="Compare">
                   <span>
                     <img src={Compare} alt="" />
                     <span className="badge bg-success">3</span>
@@ -109,9 +114,12 @@ const Header = () => {
                 </li>
               </ul>
             </div>
+           
           </div>
         </div>
       </header>
+      
+      <Navigation data={isnavOpen}/>
     </div>
   );
 };

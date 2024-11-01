@@ -1,0 +1,38 @@
+.navlist{
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(220, 220, 254);
+    top: 0px;
+    left: 0px;
+    padding: 20px 10px;
+    transition: all 0.4s ease-in-out;
+    /* display: none; */
+    visibility: visible;
+}
+.rensologo img{
+    width: 120px;
+}
+.closeIcon{
+    font-size: 20px;
+    color: #3bb77e;
+}
+nav ul{
+    text-align: start;
+    padding: 0px;
+    padding-top: 30px;
+    padding: 0px;
+    padding-left: 10px;
+}
+.closeNav{
+    position: fixed;
+    left: -200px;
+}
+.DropDownList div{
+    display: none;
+    background-color: antiquewhite;
+    position: relative;
+}
+.DropDown:hover .DropDownList div{
+    display: block;
+}

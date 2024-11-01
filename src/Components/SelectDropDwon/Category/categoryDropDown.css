@@ -42,7 +42,7 @@
 }
 .cateList{
     width: 200px;
-    height: 300px;
+    max-height: 300px;
     overflow-y: scroll;
     list-style: none;
     text-align: start;

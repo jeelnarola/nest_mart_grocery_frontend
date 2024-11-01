@@ -11,9 +11,37 @@
     .col-sm-10{width: 83.333%;}
     .col-sm-11{width: 91.666%;}
     .col-sm-12{width: 100%;}
-    .container{
+    .Custcontainer{
         max-width: 540px;
     }  
+    .navlist{
+        visibility: visible;
+    }
+    .navlist .rensologo, .navlist .respoIcon{
+        display: none;
+    }
+    .navlist{
+        position: relative;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        /* margin-top: 20px; */
+    }
+    .navlist ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .navlist ul li{
+        padding: 0px 10px;
+    }
+    .DropDownList div{
+        display: none;
+        width: 200px;
+        height: 200px;
+        background-color: antiquewhite;
+        position: absolute;
+        /* top: 80%; */
+    }
 }
 
 @media (min-width:768px) {
@@ -29,7 +57,7 @@
     .col-md-10{width: 83.333%;}
     .col-md-11{width: 91.666%;}
     .col-md-12{width: 100%;}
-        .container{
+        .Custcontainer{
             max-width: 720px;
         }
         header .headerSearch{
@@ -60,7 +88,16 @@
             margin: 0px;
             font-size: 15px;
         }
-        
+        header .logo img{
+            width: 200px;
+            margin: 0px;
+        }
+        header .headerTabs .Compare,header .headerTabs .Account{
+            visibility: visible;
+        }
+        .headerTabs{
+            display: flex;
+        }
 }
 @media (min-width:992px) {
     .col-lg-1{width: 8.333%;}
@@ -82,9 +119,7 @@
         header .headerTabs li span  .listname{
             display: block;
         }
-        header .headerTabs .Compare,header .headerTabs .Account{
-            visibility: visible;
-        }
+        
         .cateName{
             width: 130px;
             font-size: 15px;
@@ -113,7 +148,7 @@
     .col-xl-11{width: 91.666%;}
     .col-xl-12{width: 100%;}
     
-        .container{
+        .Custcontainer{
             max-width: 1140px;
         }
 }
@@ -130,7 +165,7 @@
     .col-xxl-10{width: 83.333%;}
     .col-xxl-11{width: 91.666%;}
     .col-xxl-12{width: 100%;}
-        .container{
+        .Custcontainer{
             max-width: 1320px;
         }       
 }
